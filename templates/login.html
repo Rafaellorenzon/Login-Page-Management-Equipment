@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Equipment Management</title>
+    <link rel="stylesheet" href="static/css/login.css">
+    <script src="static/base/layout.js" defer></script>
+    <script src="static/js/login.js" defer></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div>
+            <img class="image-container" src="static/images/image-login.png" alt="Login Illustration">
+            <a class="title-image">Welcome Back!</a>
+        </div>
+        <div class="main-content">
+            <div class="logo-container">
+                <h1 id="page-logo">Management Equipment</h1>
+            </div>
+            <div class="login-container">
+                <h1 class="Login-text">Login</h1>
+                <form action="/login" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div class="dropdown-container">
+                        <select id="server" name="server" required>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="loguin-button">Login</button>
+                    {% if error %}
+                    <p class="error-message">{{ error }}</p>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.body-console {
+    background-image: linear-gradient(to right, #868f96 5%, #596164 95%);
+}
+
+h1 {
+    position: relative;
+    left: 38%;
+}
+
+.console-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px; 
+    margin: 0 auto; 
+}
+
+.search-bar {
+    margin: 12px auto;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 605px;
+    height: 32px;
+}
+
+.search-bar:hover {
+    transform: scale(1.03);
+}
+
+.table-console {
+    width: 100%; 
+    font-size: 16px;
+    margin: 40px auto; 
+    border-radius: 23px;
+    border: 2px solid rgb(148,187,233);
+    background-color: #f1f8ff; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.table-console:hover {
+    transform: scale(1.0); 
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #d1e7ff; 
+    color: #333; 
+}
+
+th {
+    background-color: #d1e7ff;
+    border-color: #d1e7ff; 
+}
+
+tr:nth-child(even) {
+    background-color: #e6f3ff; 
+}
+
+tr:hover {
+    background-color: #cceeff; 
+    border-radius: 20px;
+}
+
+.clear-history-button,
+.back-button-console {
+    display: inline-block; 
+    font-family: Arial, sans-serif;
+    width: 150px;
+    font-size: 14.5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+
+.admin-action {
+    color: #dd2540; 
+}
+
+.time-action {
+    color: #dd2540; 
+}
+
+.user-action {
+    color: black;
+}
+
+/* modal  Question to clear log*/
+
+.clear-modal-question {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo do modal */
+.clear-modal-question .modal-content {
+    background-color: #ffffff; 
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+          /* Botões do modal */
+.clear-modal-question button {
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

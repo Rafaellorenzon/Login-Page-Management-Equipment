@@ -1,0 +1,13 @@
+{
+    "locations": [
+        "Inbound",
+        "Inventory",
+        "Outbound",
+        "Palletization",
+        "Picking",
+        "Replenishment",
+        "Shipping",
+        "Transport",
+        "Vas"
+    ]
+}

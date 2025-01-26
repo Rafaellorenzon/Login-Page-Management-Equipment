@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Data</title>
+
+    <link rel="stylesheet" href="static/base/notification.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/manage_data.css">
+    <link rel="stylesheet" href="static/css/modalsession.css">
+
+    <script src="static/base/notification.js" defer></script>
+    <script src="static/js/modalsession.js" defer></script>
+    <script src="static/base/layout.js" defer></script>
+    <script src="static/js/manage_data.js" defer></script>
+
+    
+</head>
+<body>
+    <div class="body-menu"></div>
+    <div class="container">
+        <div class="container-content">
+            <h1>Manage Equipments and Locations</h1>
+
+            <div class="session-container">
+                <div class="header">Options</div> <!-- Header -->
+                <ul class="list">
+                    <li class="element">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#7e8590" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil">
+                            <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
+                            <path d="m15 5 4 4"></path>
+                        </svg>
+                        <p class="label">Rename</p>
+                    </li>
+                    <li class="element">
+                        <svg class="lucide lucide-user-round-plus" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#7e8590" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 21a8 8 0 0 1 13.292-6"></path>
+                            <circle r="5" cy="8" cx="10"></circle>
+                            <path d="M19 16v6"></path>
+                            <path d="M22 19h-6"></path>
+                        </svg>
+                        <p class="label">Add Member</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button class="add-button-data" onclick="addEntryData('equipment')">Add Equipment</button>
+                <button class="back-button-data" onclick="window.location.href='/'">Back</button>
+                <button class="add-button-data" onclick="addEntryData('location')">Add Location</button>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterTable()">
+            </div>
+
+            <div class="tables-wrapper">
+                <!-- Tabela de Equipamentos -->
+                <div id="equipment-section" class="table-section">
+                    <h3>Manage Equipments</h3>
+                    <table class="table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="equipmentTableBody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Tabela de Locations -->
+                <div id="location-section" class="table-section">
+                    <h3>Manage Locations</h3>
+                    <table class="table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="locationTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+    </style>
+</body>
+</html>

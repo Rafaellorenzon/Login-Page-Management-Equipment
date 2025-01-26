@@ -1,0 +1,61 @@
+[
+    {
+        "username": "user1",
+        "equipment": "EPT 001",
+        "damages": [
+            "lifting"
+        ],
+        "timestamp": "2024-09-29 13:32:52"
+    },
+    {
+        "username": "user1",
+        "equipment": "EPT 001",
+        "damages": [
+            "tilting"
+        ],
+        "timestamp": "2024-09-29 14:12:01"
+    },
+    {
+        "username": "user1",
+        "equipment": "EPT 001",
+        "damages": [
+            "driving",
+            "emergency_brakes",
+            "horn"
+        ],
+        "timestamp": "2024-09-29 14:14:46"
+    },
+    {
+        "username": "user1",
+        "equipment": "EPT 001",
+        "damages": [
+            "lifting"
+        ],
+        "timestamp": "2024-09-29 14:16:32"
+    },
+    {
+        "username": "user1",
+        "equipment": "EPT 001",
+        "damages": [
+            "seat_belt"
+        ],
+        "timestamp": "2024-09-29 14:23:57"
+    },
+    {
+        "username": "user5",
+        "equipment": "ept001",
+        "damages": [],
+        "timestamp": "2025-01-04 23:38:17"
+    },
+    {
+        "username": "user1",
+        "equipment": "ept002",
+        "damages": [
+            "lifting",
+            "driving",
+            "wiring",
+            "forks"
+        ],
+        "timestamp": "2025-01-05 00:11:55"
+    }
+]

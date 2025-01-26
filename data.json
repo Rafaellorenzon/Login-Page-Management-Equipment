@@ -1,0 +1,127 @@
+{
+    "users": [
+        {
+            "username": "user3",
+            "password": "password3",
+            "role": "User",
+            "location": "Inbound",
+            "equipment": "Empty",
+            "status": "Not Checked"
+        },
+        {
+            "username": "user4",
+            "password": "password4",
+            "role": "User",
+            "location": "Inbound",
+            "equipment": "Empty",
+            "status": "Checked"
+        },
+        {
+            "username": "user5",
+            "password": "password5",
+            "role": "User",
+            "location": "Inbound",
+            "equipment": "Empty",
+            "status": "Checked"
+        },
+        {
+            "username": "user6",
+            "password": "password6",
+            "role": "User",
+            "location": "Inbound",
+            "equipment": "Empty",
+            "status": "Checked"
+        },
+        {
+            "username": "user7",
+            "password": "password7",
+            "role": "User",
+            "location": "Outbound",
+            "equipment": "Empty",
+            "status": "Not Checked"
+        },
+        {
+            "username": "superuser",
+            "password": "super1user1master",
+            "role": "Admin",
+            "location": "All",
+            "equipment": "Empty",
+            "status": "Not Checked"
+        },
+        {
+            "username": "user1",
+            "password": "password1",
+            "role": "User",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "user2",
+            "password": "password2",
+            "role": "User",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "ept007"
+        },
+        {
+            "username": "admin",
+            "password": "admin",
+            "role": "Admin",
+            "status": "Not Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "admin2",
+            "password": "admin",
+            "role": "Admin",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "admin3",
+            "password": "ASDASD",
+            "role": "Admin",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "admin4",
+            "password": "ASDASDASD",
+            "role": "Admin",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "user10",
+            "password": "ASGASG",
+            "role": "User",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        },
+        {
+            "username": "user11",
+            "password": "RWQRQW",
+            "role": "User",
+            "status": "Checked",
+            "location": "Inbound",
+            "equipment": "Empty"
+        }
+    ],
+    "equipments": [
+        {
+            "name": "asdasd"
+        },
+        {
+            "name": "asd"
+        },
+        {
+            "name": "asdasd"
+        }
+    ]
+}

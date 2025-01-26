@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(186,200,224);
+    background: linear-gradient(to right, rgba(186,200,224,1) 50%, rgba(106,133,182,1) 50%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    top: 27%; 
+    left: 66%;
+    text-align: center;
+    padding: 20px;
+    border: 4px solid #003366;
+    background-color: #edf1f8;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.login-container:hover {
+    transform: scale(1.03);
+}
+
+
+.Login-text {
+    color: #003366;
+    text-align: center;
+    font-size: 32px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #003366, -1px -1px 1px #003366;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #003366;
+}
+
+input {
+    width: calc(90% - 20px);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #251f2e;
+    border-radius: 20px;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:hover {
+    transform: scale(1.04);
+}
+
+
+button {
+    border-radius: 17px;
+    padding: 12px 32px;
+    margin: 20px;
+    font-size: 16px;
+    background-color: #84a9ff;
+    border: 0.5px solid #003366;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #84a9ff, #76b1ff);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    background-color: #334acc;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dropdown-container {
+    margin-top: 2px;
+}
+
+select {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: auto;
+    min-width: 100px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+
+
+/*efeito management equipment*/
+  
+  .logo-container {
+    position: absolute;
+    top: 18px;
+    left: 51%;
+    transform: scale(0.6); 
+    transform-origin: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .logo-container:before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 5px);
+    width: 80%;
+    height: 4px;
+    background-color: #003366;
+    transform-origin: center center;
+    transform: scaleX(0.90);
+    animation: line-animation 7s ease infinite alternate;
+  }
+  
+  h1#page-logo {
+    font: bold 5rem 'Arial', sans-serif;
+    color: #003366; 
+    animation: clip-path-reveal-1 7s ease infinite alternate;
+    text-shadow: 2px 1px 0px rgba(255, 255, 255, 0.2), 2px 1px 0px rgba(250, 250, 250, 0.15);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  h1#page-logo:hover {
+    transform: scale(1.02)
+  }
+  
+  @keyframes line-animation {
+    0% { transform: scaleX(0); }
+    15% { transform: scaleX(0); }
+    20%, 25% { transform: scaleX(1); top: calc(100% - 2px); }
+    50% { transform: scaleX(1); top: 0px; }
+    70% { transform: scaleX(0.2); top: 0px; }
+    80%, 100% { transform: scaleX(0.2); top: 0px; }
+  }
+  
+  @keyframes clip-path-reveal-1 {
+    0%, 25% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+    50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+  }
+  
+
+  /* image login */
+
+  .image-container-wrapper {
+    transform: translate(-50%, -50%); 
+}
+
+.image-container {
+    position: absolute; 
+    top: 13%; 
+    left: 0%; 
+    max-width: 50%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.03); /* Aplica o efeito de aumento */
+}
+
+.title-image {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px; 
+    font-weight: bold; 
+    position: absolute; 
+    top: 82%; 
+    left: 16%; 
+    text-align: center;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.2), 2px 1px 0px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.title-image:hover {
+    transform: scale(1.05); 
+}
